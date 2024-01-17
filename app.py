@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -32,6 +32,23 @@ def products():
 @app.route('/contact')
 def contact():
     return render_template("contact.html")
+
+
+@app.route('/confirmation')
+def confirmation():
+    name = request.args.get('name')
+    address = request.args.get('adr')
+    email = request.args.get('email')
+    phone = request.args.get('phone')
+    props = {
+        "name": name,
+        "email": email,
+        "address": address,
+        "phone": phone
+    }
+
+    return render_template("confirmation.html", data=props)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
