@@ -1,18 +1,7 @@
 from flask import Flask, render_template, request
+import pandas as pd
 
 app = Flask(__name__)
-
-#
-# @app.route('/')
-# def hello_world():
-#     return """
-#     <h1>Hello World!</h1>
-#     <br />
-#     Try these links: <br />
-#     - <a href='/pets'>pets</a><br />
-#      - <a href='/home'>home</a><br />
-#      - <a href='/bootstrap'>bootstrap</a><br />
-#     """
 
 
 # Rendering a html template
@@ -40,6 +29,19 @@ def confirmation():
     address = request.args.get('adr')
     email = request.args.get('email')
     phone = request.args.get('phone')
+
+    # Create a DataFrame
+    data = {
+        'Name': [name],
+        'Address': [address],
+        'Email': [email],
+        'Phone': [phone]
+    }
+
+    df = pd.DataFrame(data)
+
+    df.to_csv('user_data.csv', index=False)
+
     props = {
         "name": name,
         "email": email,
@@ -48,7 +50,6 @@ def confirmation():
     }
 
     return render_template("confirmation.html", data=props)
-
 
 if __name__ == '__main__':
     app.run(debug=True)
