@@ -9,14 +9,10 @@
 </head>
 <body>
 
-<!--<div class="container-fluid p-2 bg-primary text-white text-center">-->
-
-
-  <nav class="navbar navbar-expand-sm bg-light">
-
-  <div class="container-fluid">
-    <!-- Links -->
-    <ul class="navbar-nav">
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Veggie Corp</a>
+    <ul class="navbar-nav ms-auto">
       <li class="nav-item">
         <a class="nav-link" href="/about">About</a>
       </li>
@@ -28,34 +24,48 @@
       </li>
     </ul>
   </div>
-
 </nav>
-
 
 <div class="container mt-5">
   <div class="row">
-          <h1>About</h1>
-          <p>Welcome to Veggie Corp</p>
-
-
+    <div class="col">
+      <h1>About</h1>
+      <p>Meet our members</p>
+    </div>
   </div>
-
 
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <div class="card mb-3" style="max-width: 400px;">
+        <img class="card-img-top" src="/static/ceo.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Our CEO</h3>
+          <h4 class="card-title">Carrotina Crunchworthy</h4>
+          <p class="card-text">Carrotina Crunchworthy, the visionary CEO of Veggie Corp, is the driving force behind the company's mission to bring joy and healthiness to everyone's lives through plant-based living.</p>
+        </div>
+      </div>
     </div>
+
     <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <div class="card mb-3" style="max-width: 400px;">
+        <img class="card-img-top" src="/static/cfo.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Our CFO</h3>
+          <h4 class="card-title">Tom Veggiebucks</h4>
+          <p class="card-text">As the meticulous CFO of Veggie Corp, Tom Veggiebucks brings financial expertise and strategic acumen to the company's growth.</p>
+        </div>
+      </div>
     </div>
+
     <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <div class="card mb-3" style="max-width: 400px;">
+        <img class="card-img-top" src="/static/cto.jpg" alt="Card image">
+        <div class="card-body">
+          <h3 class="card-title">Our CTO</h3>
+          <h4 class="card-title">Brocco Techsprout</h4>
+          <p class="card-text">Brocco Techsprout, the brilliant CTO of Veggie Corp, leads the technological innovations that bring Veggie Corp's whimsical world to life.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

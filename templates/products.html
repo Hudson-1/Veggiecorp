@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 5 Example</title>
+  <title>Veggie Corp Products</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -9,14 +9,10 @@
 </head>
 <body>
 
-<!--<div class="container-fluid p-2 bg-primary text-white text-center">-->
-
-
-  <nav class="navbar navbar-expand-sm bg-light">
-
-  <div class="container-fluid">
-    <!-- Links -->
-    <ul class="navbar-nav">
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Veggie Corp</a>
+    <ul class="navbar-nav ms-auto">
       <li class="nav-item">
         <a class="nav-link" href="/about">About</a>
       </li>
@@ -28,34 +24,43 @@
       </li>
     </ul>
   </div>
-
 </nav>
-
 
 <div class="container mt-5">
   <div class="row">
-          <h1>Products</h1>
-          <p>Welcome to Veggie Corp</p>
-
-
+    <h1>Our Products</h1>
+    <p>Saving the world, one veggie at a time</p>
   </div>
-
 
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <div class="card">
+        <img src="/static/product_1.jpg" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h3 class="card-title">Eco-Grow Veggie Pods</h3>
+          <p class="card-text">Revolutionary biodegradable pods that turn any soil into a fertile ground, promoting sustainable and easy veggie growth. Watch your veggies thrive and save the planet!</p>
+        </div>
+      </div>
     </div>
+
     <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <div class="card">
+        <img src="/static/product_2.jpg" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h3 class="card-title">Rejuvenation Elixir</h3>
+          <p class="card-text">A magical elixir that brings veggies back to life! Simply spray this elixir on wilted veggies, and watch them regain their freshness and vitality. Say goodbye to food waste!</p>
+        </div>
+      </div>
     </div>
+
     <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <div class="card">
+        <img src="/static/product_3.jpg" class="card-img-top" alt="Product 3">
+        <div class="card-body">
+          <h3 class="card-title">Solar-Powered Veggie Lanterns</h3>
+          <p class="card-text">Illuminate your garden with these solar-powered lanterns shaped like veggies. Not only do they light up your space, but they also harness the power of the sun to promote sustainability.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

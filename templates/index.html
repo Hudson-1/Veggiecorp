@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 5 Example</title>
+  <title>Veggie Corp</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      padding-top: 56px;
+    }
+
+    .container img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .container h1, .container h2, .container p {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-<!--<div class="container-fluid p-2 bg-primary text-white text-center">-->
-
-
-  <nav class="navbar navbar-expand-sm bg-light">
-
-  <div class="container-fluid">
-    <!-- Links -->
-    <ul class="navbar-nav">
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Veggie Corp</a>
+    <ul class="navbar-nav ms-auto">
       <li class="nav-item">
         <a class="nav-link" href="/about">About</a>
       </li>
@@ -28,34 +39,27 @@
       </li>
     </ul>
   </div>
-
 </nav>
-
 
 <div class="container mt-5">
   <div class="row">
-          <h1>Home</h1>
-          <p>Welcome to Veggie Corp</p>
-
-
+    <div class="col-md-12">
+      <img src="/static/frontimage.jpg" alt="Front Image" class="img-fluid rounded mx-auto d-block" style="max-width: 25%;">
+      <h1>Welcome to Veggie Corp</h1>
+      <p>Making the world better for veggies</p>
+    </div>
   </div>
 
-
   <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div class="col-md-6">
+      <h2>What We Stand For</h2>
+      <p>Veggie Corp is a whimsical company on a mission to bring joy and healthiness to everyone's lives! Our colorful and friendly vegetable characters work together to create a world filled with delicious and nutritious plant-based delights. From singing cucumbers to dancing tomatoes, Veggie Corp's unique approach combines entertainment with healthy living.
+        Join our veggie friends as they embark on exciting adventures in the land of tasteful goodness. Whether it's crunchy carrot chips or giggly grape snacks, Veggie Corp believes in making healthy choices fun and enjoyable for people of all ages. So, hop on board the Veggie Corp express and let the veggie tales of happiness and well-being begin!</p>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div class="col-md-6">
+      <h2>Our Roots</h2>
+      <p>Once upon a time, in the vibrant and magical land of Verdant Valley, a group of cheerful and lively vegetables discovered a shared dream. Carrotina the Carrot, Tom the Tomato, and Brocco the Broccoli, along with their vegetable friends, envisioned a world where everyone could lead happy and healthy lives through the power of plant-based living.
+        Inspired by their dream, the veggie friends decided to join forces and create Veggie Corp – a company dedicated to spreading joy, healthiness, and sustainability across the land.</p>
     </div>
   </div>
 </div>
